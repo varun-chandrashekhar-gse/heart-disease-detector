@@ -11,10 +11,13 @@ from subprocess import call
 #import joblib
 
 
-st.title('Heart Disease Diagnosis Assistant')
-st.markdown('This application is meant to **_assist_ _doctors_ _in_ diagnosing**, if a patient has a **_Heart_ _Disease_ _or_ not** using few details about their health')
+st.title('OnAid Heart Disease Diagnosis')
+st.markdown('This application is meant to **_assist_ _hospitals_ _in_ diagnosing**, if a patient has a **_Heart_ _Disease_ _or_ not** inputing a few health statistics.
+st.markdown('This Application Uses an **_Ensemble_ _of_ _3_ models(KNN, Logistic, Random Forest for Prediction)**')
 
-st.markdown('Please **Enter _the_ _below_ details** to know the results -')
+st.text('\n')
+            
+st.markdown('Please **Enter _the_ _below_ statistics** to recieve your results -')
 
 age = st.text_input(label='Age')
 
@@ -100,16 +103,3 @@ if st.button('Check Diagnosis'):
     #f = open('pred.txt', 'r')
     #st.text(str(f.read()))
 
-st.text('\n')
-st.text('\n')
-st.text('\n')
-st.text('\n')
-st.text('\n')
-st.text('\n')
-st.text('\n')
-st.text('\n')
-
-
-
-
-st.markdown('This Application Uses an **_Ensemble_ _of_ _3_ models(KNN, Logistic, Random Forest for Prediction)**')
