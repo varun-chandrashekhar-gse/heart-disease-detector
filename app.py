@@ -83,7 +83,7 @@ if st.button('Check Diagnosis'):
                        columns= original_cols)
         df_pred.to_csv('./inputData.csv')
 
-        #ensemble_pred = os.system(pipeline.py)
+        ensemble_pred = os.system(pipeline.py) #################
         #luigi.run()
     try:
         call("python pipeline.py PredictEnsemble --local-scheduler", shell=True)
@@ -98,7 +98,7 @@ if st.button('Check Diagnosis'):
         st.header('The patient {}'.format(str(ensemble_pred)))
     except Exception as e:
         st.header('Please provide all the input values & within range')
-        #st.text(e)
+        st.text(e)
 
     #f = open('pred.txt', 'r')
     #st.text(str(f.read()))
