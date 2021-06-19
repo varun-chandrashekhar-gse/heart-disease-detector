@@ -4,11 +4,11 @@ import pandas as pd
 import pickle
 import time
 import os
-#from sklearn.externals import joblib 
+from sklearn.externals import joblib ################ 
 from features_utils import *
 from pipeline import *
 from subprocess import call
-#import joblib
+import joblib ###############
 
 
 st.title('OnAid Heart Disease Diagnosis')
@@ -83,8 +83,8 @@ if st.button('Check Diagnosis'):
                        columns= original_cols)
         df_pred.to_csv('./inputData.csv')
 
-        #ensemble_pred = os.system(pipeline.py) #################
-        #luigi.run()
+        ensemble_pred = os.system(pipeline.py) #################
+        luigi.run() ################
     try:
         call("python pipeline.py PredictEnsemble --local-scheduler", shell=True)
     except Exception as e:
@@ -100,6 +100,6 @@ if st.button('Check Diagnosis'):
         st.header('Please provide all the input values & within range')
         st.text(e)
 
-    #f = open('pred.txt', 'r')
-    #st.text(str(f.read()))
+    f = open('pred.txt', 'r')####################
+    st.text(str(f.read())) ##################
 
