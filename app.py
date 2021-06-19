@@ -12,7 +12,7 @@ from subprocess import call
 
 
 st.title('OnAid Heart Disease Diagnosis')
-st.markdown('This application is meant to **_assist_ _hospitals_ _in_ diagnosing**, if a patient has a **_Heart_ _Disease_ _or_ not** inputing a few health statistics.
+st.markdown('This application is meant to **_assist_ _hospitals_ _in_ diagnosing**, if a patient has a **_Heart_ _Disease_ _or_ not** inputing a few health statistics.')
 st.markdown('This Application Uses an **_Ensemble_ _of_ _3_ models(KNN, Logistic, Random Forest for Prediction)**')
 
 st.text('\n')
