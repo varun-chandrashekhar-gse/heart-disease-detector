@@ -84,7 +84,7 @@ if st.button('Check Diagnosis'):
         df_pred.to_csv('./inputData.csv')
 
         ensemble_pred = os.system(pipeline.py) #################
-        luigi.run() ################
+        #luigi.run() ################
     try:
         call("python pipeline.py PredictEnsemble --local-scheduler", shell=True)
     except Exception as e:
