@@ -113,7 +113,3 @@ st.text('\n')
 
 
 st.markdown('This Application Uses an **_Ensemble_ _of_ _3_ models(KNN, Logistic, Random Forest for Prediction)**')
-st.markdown('**App Framework** - **Streamlit**')
-st.markdown('**Inference Pipeline** - **Luigi**')
-st.markdown('**Developed by** - Nikhil Kohli')
-st.markdown('**www.linkedin.com/in/nikhilkohli92**')
